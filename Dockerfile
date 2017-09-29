@@ -111,7 +111,6 @@ sed -i \
     -e "s|;cgi.fix_pathinfo\s*=.*|cgi.fix_pathinfo = 1|" \
     -e "s|;date.timezone\s*=.*|date.timezone = Europe/Kiev|" \
     /usr/local/etc/php/php.ini && \
-mkdir /app && \
 rm -rf ~/${PHP_VERSION} && \
 rm -rf /var/cache/apk/* && \
 php -m && \
